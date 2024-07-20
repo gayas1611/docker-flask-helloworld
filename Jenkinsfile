@@ -21,7 +21,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    docker.image("my-flask-app").run("-p 8080:8080 --name flask-container")
+                    docker.image("my-flask-app").run("-p 8083:8080 --name flask-container")
                 }
             }
         }
